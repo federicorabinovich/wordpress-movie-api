@@ -1,0 +1,10 @@
+<div class="jumbotron move">
+	
+		<h1>{{::movie.title}}</h1>
+		<span class="glyphicon glyphicon-star" aria-hidden="true" ng-repeat="star in $parent.makeObj(movie.rating)"></span>
+		<h3 ng-repeat="star in movie.rating">hola</h3>
+		<h5>{{::movie.year}}</h5>
+		<img class="cover" ng-src="{{::movie.poster_url}}">
+		<p ng-bind-html='movie.short_description'></p>
+	
+</div>

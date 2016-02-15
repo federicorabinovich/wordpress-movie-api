@@ -1,0 +1,28 @@
+<div class="separator50"></div>
+<form class="form-inline">
+  <div class="form-group"
+    <label for="exampleInputName2">Order by</label>
+	<select class="form-control" ng-model="orderBy">
+		<option value="rating">Rating</option>
+		<option value="year">Year</option>
+	</select>
+  </div>
+  
+  <div class="form-group pull-right">
+    <input type="text" class="form-control" placeholder="search movies" ng-model="searchText">
+  </div>
+  
+</form>
+
+<div class="separator50"></div>
+<div class="container-fluid">
+  <div class="row" ng-show="areThereMovies">
+		<div class="col-md-4" ng-repeat="movie in filter() | orderBy: orderBy:'reverse' | limitTo: paginationLimit()">
+			<movie-file></movie-file>
+		</div>
+	</div>
+	<h1 class="al-center" ng-hide="areThereMovies">Sorry, no movies to show</h1>
+</div>
+<div class="btn_container">
+	<button ng-show="hasMoreItemsToShow()" ng-click="showMoreItems()" type="button" class="btn btn-primary btn-lg btn-block">Show me more</button>
+</div>

@@ -1,0 +1,77 @@
+/*some lightweight adjustments to bootstrap*/
+
+@font-face {
+    font-family: aleo;
+    src: url(../fonts/aleo-regular-webfont.woff);
+}
+select{
+	margin-right:20px;
+}
+
+.form-control:focus{   
+    border-color: #AACF39;
+    box-shadow: 0 0px 5px #AACF39;
+    outline: 0 none;
+}
+.separator50{
+	margin-top:50px;
+	width:100%;
+	height:0px;
+	float:none;
+	clear:both;
+	display:block;
+}
+.jumbotron{
+	border:1px solid #2a2a2a;
+	padding: 10px !important;
+	height: 400px;
+}
+.glyphicon-star{
+	color: #e9d460;
+	text-shadow: -1px 0 #2a2a2a, 0 1px #2a2a2a, 1px 0 #2a2a2a, 0 -1px #2a2a2a;
+	margin-right:3px;
+}
+.jumbotron .cover{
+	width:auto;
+	max-width:100%;
+	margin:5px auto;
+	display:block;
+	height:200px;
+	border-radius: 3px;
+}
+.jumbotron h1{
+	font-size: 1.5em;
+	margin:0;
+}
+.jumbotron h5{
+	font-size: 1em;
+	margin:0;
+}
+.jumbotron p{
+	font-size:12px;
+	text-align:justify;
+}
+
+
+a, a:hover{
+	text-decoration:none;
+}
+.al-right{
+	float:right;
+}
+.btn_container{
+	display:block;
+	width:50%;
+	margin:10px auto 50px;
+}
+
+.move {
+  transition: all 0.25s ease-in-out;
+}
+.move:hover {
+  transition: all .55s ease-in-out;
+  transform: translateY(-30px);
+}
+.al-center{
+	text-align:center;
+}
